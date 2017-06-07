@@ -7,23 +7,46 @@
   <title>Document</title>
 </head>
 <body>
-  <p class="segundo-paragrafo">
-    Now, the screen reader is following the HTML structure and reading this paragraph first.
+  <p class="content" tabindex="0">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quod esse,
+    accusamus officiis fugit, delectus consectetur suscipit repudiandae error
+    nam ex eveniet animi non minima quasi, culpa cupiditate dolorum asperiores.
   </p>
-  <p class="primeiro-paragrafo">
-    But people who don't need screen readers will read this one first.
-  </p>
+  <h1 class="title" tabindex="0">
+    This is the title
+  </h1>
+  <nav>
+    <ul>
+      <li><a href="#" class="">Nav 1</a></li>
+      <li><a href="#" class="">Nav 2</a></li>
+      <li><a href="#" class="">Nav 3</a></li>
+      <li><a href="#" class="">Nav 4</a></li>
+    </ul>
+  </nav>
   <style>
-    p {
+    .title {
+      top: 0;
       position: absolute
     }
 
-    .primeiro-paragrafo {
-      top: 0;
+    .content {
+      top: 50px;
+      position: absolute
     }
 
-    .segundo-paragrafo {
-      top: 20px;
+    nav {
+      position: absolute;
+      top: 100px;
+      left: 0;
+      padding: 0;
+      width: 100%;
+      margin: 0;
+    }
+
+    nav li {
+      list-style: none;
+      display: inline-block;
+
     }
   </style>
 </body>
